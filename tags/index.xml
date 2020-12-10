@@ -5,6 +5,16 @@
     <link>https://example.com/tags/</link>
     <description>Recent content in Tags on 一处清净</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://example.com/tags/git/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

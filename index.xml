@@ -7,13 +7,92 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>测试</title>
-        <link>https://example.com/p/new-test/</link>
+        <title>Hugo博客更新的操作</title>
+        <link>https://example.com/p/git-use/</link>
         <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/p/new-test/</guid>
-        <description>&lt;h1 id=&#34;测试&#34;&gt;测试&lt;/h1&gt;
-&lt;p&gt;这是一个简单的测试&lt;/p&gt;
+        <guid>https://example.com/p/git-use/</guid>
+        <description>&lt;img src="https://example.com/p/git-use/%E6%8A%B9%E8%8C%B6.png" alt="Featured image of post Hugo博客更新的操作" /&gt;&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;一耳机一电脑，一撘博客十年少。&lt;/p&gt;
+&lt;p&gt;头都快秃了，怎么多问题。好不容易部署好了，发现每次更新会有问题，就想着自己重新整一整。结果&amp;hellip;&amp;hellip;别说了，又是三四个小时没有了。（哭&lt;/p&gt;
+&lt;p&gt;记录下零零碎碎的方法，免得以后又忘了。&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;h2 id=&#34;初次部署&#34;&gt;初次部署&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;# 初始化仓库
+git init
+
+# 将所有内容添加到git
+git add .
+
+# 提交到git 本地
+git commit -m &amp;quot;我的博客第一次提交&amp;quot;
+
+# 关联到远程git，注意这里需要写你自己的git 地址
+git remote add origin https://github.com/Sioncovy/Sioncovy.github.io
+
+# 推送到远程git
+git push origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意从2020年10月以后新建的github账户，默认主分支都是main而不是master。&lt;/p&gt;
+&lt;h2 id=&#34;更新操作&#34;&gt;更新操作&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt; hugo #将更新文件生成要同步的public
+ 
+ cd public	#进入public文件夹
+ 
+ git init	#初始化仓库
+ 
+ git remote add origin https://github.com/Sioncovy/Sioncovy.github.io #填写自己的域名
+ 
+ git add -A	#打包添加所有文件
+ 
+ git commit -m &amp;quot;update-hugo&amp;quot;	#备注本次改变
+ 
+ git push -f origin main	#同步到github
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git分支从master切换到main&#34;&gt;git分支从master切换到main&lt;/h2&gt;
+&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;本地当前分支为master，远程仓库为main，且远程仓库与本地仓库有 unrelated histories这样的问题，如远程仓库有README.md但本地没有&lt;/p&gt;
+&lt;h3 id=&#34;详情&#34;&gt;详情&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;git checkout -b main
+# Switched to a new branch &#39;main&#39;
+
+git branch
+# * main
+#  master
+
+git merge master # 将master分支合并到main上
+# Already up to date.
+
+git pull origin main --allow-unrelated-histories 
+# git pull origin main会报错：refusing to merge unrelated histories
+
+git push origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分支冲突&#34;&gt;分支冲突&lt;/h2&gt;
+&lt;h3 id=&#34;背景-1&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git push origin master
+Fatal: HttpRequestException encountered.
+Username for &#39;https://github.com&#39;: syb666
+To https://github.com/syb666/Django-admin.git
+ ! [rejected]        master -&amp;gt; master (non-fast-forward)
+error: failed to push some refs to &#39;https://github.com/syb666/Django-admin.git&#39;
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;出现错误的主要原因是github中的README.md文件不在本地代码目录中&lt;/p&gt;
+&lt;h3 id=&#34;解决方法&#34;&gt;解决方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;1: 进行push前先将远程仓库pull到本地仓库
+$ git pull origin master    #git pull --rebase origin master
+$ git push -u origin master
+ 
+2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
+$ git push -u origin master -f
+ 
+3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
+$ git branch [name]
+# 创建完branch后, 再进行push
+$ git push -u origin [name]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;注：若使用方法2，会全量覆盖github上面的文件，导致非本地文件全部删除。所以最好还是先pull下来再push上去&lt;/strong&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -33,7 +112,7 @@
 &lt;p&gt;​		东东学长挺身而出，经历一番艰苦卓绝，&lt;del&gt;双人懵逼&lt;/del&gt;，大佬带飞的时间后，发现是因为&lt;del&gt;傻逼&lt;/del&gt;美国因为黑人事件改了github的默认文件名，将传统的master改为了main。导致和教程发生了冲突，push到github的文件没有正确找到位置合并。&lt;/p&gt;
 &lt;p&gt;​		本以为终于大工告成的时候，打开github，一刷新。啊这，我是谁，我在哪？push上来的文件呢？？？？&lt;/p&gt;
 &lt;h2 id=&#34;最终达成&#34;&gt;最终达成&lt;/h2&gt;
-&lt;p&gt;​		东东学长辛苦搞定之后发现为什么明明删除了却还是会显示开始误建立的分支master。请来了精通相关操作~~（一样当初被折磨）~~的优秀莉莉学姐。一通行云流水的操作（指刷新了一下git数据）后，完美解决了。&lt;/p&gt;
+&lt;p&gt;​		东东学长辛苦搞定之后发现为什么明明删除了却还是会显示开始误建立的分支master。请来了精通相关操作（&lt;del&gt;一样当初被折磨&lt;/del&gt;）的优秀莉莉学姐。一通行云流水的操作（指刷新了一下git数据）后，完美解决了。&lt;/p&gt;
 &lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
 &lt;p&gt;​		啊啊啊啊！！有大佬带的感觉太好了，完全不是以前全得靠自己一个人摸索，耗费巨量时间还不一定能成功。感谢实验室大家对我的帮助。&lt;/p&gt;
 </description>
