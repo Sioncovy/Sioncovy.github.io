@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 一处清净</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on 一处清净</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试</title>
+      <link>https://example.com/p/new-test/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/new-test/</guid>
+      <description>测试 这是一个简单的测试</description>
+    </item>
+    
+    <item>
+      <title>一切的开始</title>
+      <link>https://example.com/p/all-begin/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/all-begin/</guid>
+      <description>前言 ​	从开始学习编程的时候，在学习大佬们的算法时，看着个人博客赏心悦目的界面时，心生艳羡，想着以后一定要做。几个月来一方面感觉自己技术不够，同时也觉得时间不够用，不一定能折腾出来。然而人生很多时候并不是精心策划，步步稳妥有计划的。决心来的很突然，行动力也恰好满足。于是就开始了，一个对我而言全新领域的尝试——搭建自己的博客。
+初步准备 ​	先查好资料，根据性能，美观，是否便于自己修改，构建难易度等各个因素考虑来选择适合自己的构建方案。
+​	第一次没有经验，搜到哪个做哪个。一路HEXO无比顺畅，最后结果被卡在了莫名其妙的地方（心态崩了）。安装了之后命令不存在无法执行，迷茫。然后在实验室大佬的推荐下改用了Hugo架构，基于Golang语言的Hugo相较其他基于node.js的架构，编译性能高了很大一截。（坏处就是看不懂）
+​	然后一顿操作安装好git，Hugo之后，就开始了快乐的构建之旅。
+中期翻车，螺旋懵逼 ​	当我下载好了主题，满心欢喜开始敲命令部署到github上面。随着最重要的一步随着一行红色的错误警告而再行不能的时候。~~我麻木了。~~不断地尝试新的命令和各种可能性。还是一无所获。
+​	东东学长挺身而出，经历一番艰苦卓绝，双人懵逼，大佬带飞的时间后，发现是因为傻逼美国因为黑人事件改了github的默认文件名，将传统的master改为了main。导致和教程发生了冲突，push到github的文件没有正确找到位置合并。
+​	本以为终于大工告成的时候，打开github，一刷新。啊这，我是谁，我在哪？push上来的文件呢？？？？
+最终达成 ​	东东学长辛苦搞定之后发现为什么明明删除了却还是会显示开始误建立的分支master。请来了精通相关操作~~（一样当初被折磨）~~的优秀莉莉学姐。一通行云流水的操作（指刷新了一下git数据）后，完美解决了。
+感想 ​	啊啊啊啊！！有大佬带的感觉太好了，完全不是以前全得靠自己一个人摸索，耗费巨量时间还不一定能成功。感谢实验室大家对我的帮助。</description>
+    </item>
+    
+  </channel>
+</rss>
