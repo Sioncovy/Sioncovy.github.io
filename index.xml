@@ -23,32 +23,86 @@
 &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211112037.png&#34; alt=&#34;QQ截图20201211112037&#34;  /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112037.png&#34; data-size=&#34;618x351&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112037_hu8364e7c4f7fc65787f998036425ec1ca_26700_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112037_hu8364e7c4f7fc65787f998036425ec1ca_26700_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112037.png&#34; width=&#34;618&#34; height=&#34;351&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211112037&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211112037&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211112200.png&#34; alt=&#34;QQ截图20201211112200&#34;  /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112200.png&#34; data-size=&#34;559x332&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112200_hu6eccd482646617602c2f5ec2c553b6c2_25831_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112200_hu6eccd482646617602c2f5ec2c553b6c2_25831_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211112200.png&#34; width=&#34;559&#34; height=&#34;332&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211112200&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211112200&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;一-逻辑的运算&#34;&gt;一. &amp;amp;&amp;amp;逻辑的运算&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;两边为真才能判定表达式为真&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211104912.png&#34; alt=&#34;QQ截图20201211104912&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211104912.png&#34; data-size=&#34;550x308&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211104912_hua6bf74b1440aee818b44caffbdaa2acb_23984_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211104912_hua6bf74b1440aee818b44caffbdaa2acb_23984_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211104912.png&#34; width=&#34;550&#34; height=&#34;308&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211104912&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211104912&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;一边为假则能判定表达式为假&lt;/p&gt;
-&lt;p&gt;​				&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211105112.png&#34; alt=&#34;QQ截图20201211105112&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;​				&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211105112.png&#34; data-size=&#34;549x304&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211105112_hu2b2b3d8a875eb9fb76bcb016e30723b4_23739_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211105112_hu2b2b3d8a875eb9fb76bcb016e30723b4_23739_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211105112.png&#34; width=&#34;549&#34; height=&#34;304&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211105112&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211105112&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;二-逻辑的运算&#34;&gt;二. ||逻辑的运算&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;一边为真则表达式为真，中止判断&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211111519.png&#34; alt=&#34;QQ截图20201211111519&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111519.png&#34; data-size=&#34;546x307&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111519_hubb62c2f8ef0c0a3adb205404f0d0b5d1_23322_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111519_hubb62c2f8ef0c0a3adb205404f0d0b5d1_23322_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111519.png&#34; width=&#34;546&#34; height=&#34;307&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211111519&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211111519&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;两边为假才判定为假&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211111734.png&#34; alt=&#34;QQ截图20201211111734&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+		&lt;a href=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111734.png&#34; data-size=&#34;560x304&#34;&gt;
+			&lt;img srcset=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111734_hu669fe6625f940be65dae3c414e9ec1b4_23387_480x0_resize_box_2.png 480w, https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111734_hu669fe6625f940be65dae3c414e9ec1b4_23387_1024x0_resize_box_2.png 1024w&#34;
+				src=&#34;https://example.com/p/short-cal/QQ%E6%88%AA%E5%9B%BE20201211111734.png&#34; width=&#34;560&#34; height=&#34;304&#34; loading=&#34;lazy&#34;
+				alt=&#34;QQ截图20201211111734&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;QQ截图20201211111734&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
