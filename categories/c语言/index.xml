@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C语言 on 一处清净</title>
+    <link>https://example.com/categories/c%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in C语言 on 一处清净</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/c%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C语言中逻辑短路运算</title>
+      <link>https://example.com/p/short-cal/</link>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/p/short-cal/</guid>
+      <description>原理 原理依据：&amp;amp;&amp;amp;、| |都是先计算左边表达式的值，当左边表达式的值能确定整个表达式的值时，就不再计算右边表达式的值。
+正文 自增运算符 n++为先使用n参与运算，再进行+1操作
+++n为先进行+1操作，再参与运算
+即:
+int n = 0; if(n++ == 1) printf(&amp;#34;Hi&amp;#34;); printf(&amp;#34;%d&amp;#34;, n); int n = 0; if(++n == 1) printf(&amp;#34;Hi&amp;#34;); printf(&amp;#34;%d&amp;#34;, n); 一. &amp;amp;&amp;amp;逻辑的运算  两边为真才能判定表达式为真   一边为假则能判定表达式为假
+​	  二. ||逻辑的运算  一边为真则表达式为真，中止判断   两边为假才判定为假
+  </description>
+    </item>
+    
+  </channel>
+</rss>

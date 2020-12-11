@@ -6,7 +6,54 @@
         <description>Recent content on 一处清净</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C语言中逻辑短路运算</title>
+        <link>https://example.com/p/short-cal/</link>
+        <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/short-cal/</guid>
+        <description>&lt;img src="https://example.com/p/short-cal/2056edbecdf19446d76dd8c07536c740.jpg" alt="Featured image of post C语言中逻辑短路运算" /&gt;&lt;h1 id=&#34;原理&#34;&gt;原理&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;原理依据：&amp;amp;&amp;amp;、| |都是先计算左边表达式的值，当左边表达式的值能确定整个表达式的值时，就不再计算右边表达式的值。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;h2 id=&#34;自增运算符&#34;&gt;自增运算符&lt;/h2&gt;
+&lt;p&gt;n++为先使用n参与运算，再进行+1操作&lt;/p&gt;
+&lt;p&gt;++n为先进行+1操作，再参与运算&lt;/p&gt;
+&lt;p&gt;即:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211112037.png&#34; alt=&#34;QQ截图20201211112037&#34;  /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211112200.png&#34; alt=&#34;QQ截图20201211112200&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;一-逻辑的运算&#34;&gt;一. &amp;amp;&amp;amp;逻辑的运算&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;两边为真才能判定表达式为真&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211104912.png&#34; alt=&#34;QQ截图20201211104912&#34;  /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;一边为假则能判定表达式为假&lt;/p&gt;
+&lt;p&gt;​				&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211105112.png&#34; alt=&#34;QQ截图20201211105112&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;二-逻辑的运算&#34;&gt;二. ||逻辑的运算&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;一边为真则表达式为真，中止判断&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211111519.png&#34; alt=&#34;QQ截图20201211111519&#34;  /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;两边为假才判定为假&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5c%e7%9f%ad%e8%b7%af%e8%bf%90%e7%ae%97%5cQQ%e6%88%aa%e5%9b%be20201211111734.png&#34; alt=&#34;QQ截图20201211111734&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>Hugo博客更新的操作</title>
         <link>https://example.com/p/git-use/</link>
         <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
@@ -39,16 +86,15 @@ git push origin main
  cd public	#进入public文件夹
  
  git init	#初始化仓库
+
+ git add .	#打包添加所有文件
  
- git remote add origin https://github.com/Sioncovy/Sioncovy.github.io #填写自己的域名
- 
- git add -A	#打包添加所有文件
- 
- git commit -m &amp;quot;update-hugo&amp;quot;	#备注本次改变
+ git commit -m &amp;quot;update&amp;quot;	#备注本次改变
  
  git push -f origin main	#同步到github
 
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git分支从master切换到main&#34;&gt;git分支从master切换到main&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;一些操作过程中碰到的问题&#34;&gt;一些操作过程中碰到的问题&lt;/h1&gt;
+&lt;h2 id=&#34;git分支从master切换到main&#34;&gt;git分支从master切换到main&lt;/h2&gt;
 &lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 &lt;p&gt;本地当前分支为master，远程仓库为main，且远程仓库与本地仓库有 unrelated histories这样的问题，如远程仓库有README.md但本地没有&lt;/p&gt;
 &lt;h3 id=&#34;详情&#34;&gt;详情&lt;/h3&gt;
@@ -82,11 +128,11 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;出现错误的主要原因是github中的README.md文件不在本地代码目录中&lt;/p&gt;
 &lt;h3 id=&#34;解决方法&#34;&gt;解决方法&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-git&#34; data-lang=&#34;git&#34;&gt;1: 进行push前先将远程仓库pull到本地仓库
-$ git pull origin master    #git pull --rebase origin master
-$ git push -u origin master
+$ git pull origin main    #git pull --rebase origin main
+$ git push -u origin main
  
 2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
-$ git push -u origin master -f
+$ git push -u origin main -f
  
 3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
 $ git branch [name]
